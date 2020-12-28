@@ -1,0 +1,152 @@
+body {
+    padding: 20px;
+}
+
+[class*="snowflake"]{
+    position: relative;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: movement 7s ease-in-out infinite;
+}
+
+.snowflake2 {
+    left: 150px;
+    top: 50px;
+}
+
+.snowflake3 {
+    left: 300px;
+    top: 20px;
+}
+
+.snowflake4 {
+    left: 500px;
+    top: 70px;
+}
+
+.snowflake5 {
+    left: 750px;
+    top: 100px;
+}
+
+.snowflake6 {
+    left: 900px;
+    top: 20px;
+}
+
+.snowflake7 {
+    left: 1100px;
+    top: 80px;
+}
+
+.snowflake8 {
+    left: 1300px;
+    top: 150px;
+}
+
+.snowflake9 {
+    left: 100px;
+    top: 250px;
+}
+
+.snowflake10 {
+    left: 620px;
+    top: 200px;
+}
+
+.snowflake11 {
+    left: 850px;
+    top: 350px;
+}
+
+.snowflake12 {
+    left: 400px;
+    top: 350px;
+}
+
+.snowflake13 {
+    left: 800px;
+    top: 200px;
+}
+
+.snowflake14 {
+    left: 300px;
+    top: 200px;
+}
+
+.snowflake15 {
+    left: 1200px;
+    top: 400px;
+}
+
+[class*="part"]{
+    position: absolute;
+}
+
+.part2{
+    transform: rotate(60deg) translateX(10px) translateY(-6px);
+}
+
+.part3{
+     transform: rotate(120deg) translateX(10px) translateY(-17px);
+ }
+
+.part4{
+    transform: rotate(180deg) translateX(0px) translateY(-20px);
+}
+
+.part5{
+    transform: rotate(-120deg) translateX(-10px) translateY(-17px);
+}
+
+.part6{
+    transform: rotate(-60deg) translateX(-10px) translateY(-6px);
+
+}
+
+.edge {
+    position: relative;
+    display: block;
+    background-color: lightblue;
+    height: 20px;
+    width: 3px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+[class*="hand"] {
+    position: absolute;
+    background-color: lightblue;
+    height: 10px;
+    width: 3px;
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+    animation: twinkle 1s ease infinite;
+}
+
+.hand1{
+    left: 100%;
+    transform: rotateZ(35deg);
+}
+.hand2{
+    right: 100%;
+    transform: rotateZ(-35deg);
+}
+
+@keyframes twinkle {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(50%);
+    }
+}
+
+@keyframes movement {
+    from {
+        transform: translateY(0) rotateY(0);
+    }
+    to {
+        transform: translateY(700px) rotateY(180deg);
+    }
+}
