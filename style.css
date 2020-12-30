@@ -1,5 +1,13 @@
 body {
-    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 [class*="snowflake"]{
@@ -121,7 +129,8 @@ body {
     width: 3px;
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;
-    animation: twinkle 1s ease infinite;
+    animation: snow_twinkle 1s ease infinite;
+
 }
 
 .hand1{
@@ -133,7 +142,14 @@ body {
     transform: rotateZ(-35deg);
 }
 
-@keyframes twinkle {
+
+#star_1, #star_2, #star_3, #star_4, #star_5 {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: star_twinkle 3s linear infinite;
+}
+
+@keyframes snow_twinkle {
     from {
         transform: scale(0);
     }
@@ -142,11 +158,23 @@ body {
     }
 }
 
+@keyframes star_twinkle {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+    transform: scale(1);
+    }
+}
+
 @keyframes movement {
     from {
-        transform: translateY(0) rotateY(0);
+        transform: translateY(0) rotateX(0);
     }
     to {
-        transform: translateY(700px) rotateY(180deg);
+        transform: translateY(100vh) rotateX(-180deg);
     }
 }
