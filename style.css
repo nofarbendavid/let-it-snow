@@ -2,6 +2,8 @@ body {
     margin: 30px;
     overflow: hidden;
     position: relative;
+    background: url('background4.jpg');
+    background-size: cover;
 }
 
 .container {
@@ -14,7 +16,7 @@ body {
     position: relative;
     transform-origin: center;
     transform-box: fill-box;
-    animation: movement 7s ease-in-out infinite;
+    animation: snow_movement 6s ease-in-out infinite;
 }
 
 .snowflake1{
@@ -149,12 +151,18 @@ body {
     transform: rotateZ(-35deg);
 }
 
-
-#star_1, #star_2, #star_3, #star_4, #star_5 {
+[id*="star"]{
     transform-box: fill-box;
     transform-origin: center;
     animation: star_twinkle 3s linear infinite;
 }
+
+[id*="ball"]{
+    transform-box: fill-box;
+    transform-origin: center -20px;
+    animation: ball_movement 1s linear infinite alternate;
+}
+
 
 @keyframes snow_twinkle {
     from {
@@ -170,18 +178,27 @@ body {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.2);
+        transform: scale(1.5);
     }
     100% {
         transform: scale(1);
     }
 }
 
-@keyframes movement {
+@keyframes snow_movement {
     from {
         transform: translateY(0) rotateY(0);
     }
     to {
         transform: translateY(100vh) rotateY(180deg);
+    }
+}
+
+@keyframes ball_movement {
+    from {
+        transform: rotate(5deg);
+    }
+    to {
+        transform: rotate(-5deg);
     }
 }
