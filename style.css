@@ -1,5 +1,5 @@
 body {
-    margin: 20px;
+    margin: 30px;
     overflow: hidden;
     position: relative;
 }
@@ -17,74 +17,81 @@ body {
     animation: movement 7s ease-in-out infinite;
 }
 
+.snowflake1{
+    top: 20px;
+    left: 20px;
+}
+
 .snowflake2 {
-    left: 150px;
-    top: 50px;
+    top: 200px;
+    left: 250px;
+    animation-delay: -5s;
 }
 
 .snowflake3 {
-    left: 300px;
-    top: 20px;
+    top: 100px;
+    left: 400px;
+    animation-delay: -1s;
 }
 
 .snowflake4 {
-    left: 500px;
-    top: 70px;
+    top: 220px;
+    left: 550px;
+    animation-delay: -2s;
 }
 
 .snowflake5 {
-    left: 750px;
     top: 100px;
+    left: 850px;
+    animation-delay: -4s;
 }
 
 .snowflake6 {
+    top: 300px;
     left: 900px;
-    top: 20px;
+    animation-delay: -3s;
 }
 
 .snowflake7 {
-    left: 1100px;
-    top: 80px;
+    top: 150px;
+    left: 1000px;
+    animation-delay: -1s;
 }
 
 .snowflake8 {
+    top: 50px;
     left: 1300px;
-    top: 150px;
+    animation-delay: -5s;
 }
 
 .snowflake9 {
-    left: 100px;
-    top: 250px;
+    top: 200px;
+    left: 1400px;
+    animation-delay: -6s;
 }
 
 .snowflake10 {
-    left: 620px;
-    top: 200px;
+    top: 100px;
+    left: 1500px;
+    animation-delay: -2s;
 }
 
 .snowflake11 {
-    left: 850px;
-    top: 350px;
+    top: 300px;
+    left: 1550px;
+    animation-delay: -4s;
 }
 
 .snowflake12 {
-    left: 400px;
-    top: 350px;
+    top: 200px;
+    left: 1650px;
+    animation-delay: -4s;
 }
 
 .snowflake13 {
-    left: 800px;
-    top: 200px;
-}
-
-.snowflake14 {
-    left: 300px;
-    top: 200px;
-}
-
-.snowflake15 {
-    left: 1200px;
-    top: 400px;
+    top: 80px;
+    left: 1750px;
+    animation-delay: -4s;
 }
 
 [class*="part"]{
@@ -166,15 +173,15 @@ body {
         transform: scale(1.2);
     }
     100% {
-    transform: scale(1);
+        transform: scale(1);
     }
 }
 
 @keyframes movement {
     from {
-        transform: translateY(0) rotateX(0);
+        transform: translateY(0) rotateY(0);
     }
     to {
-        transform: translateY(100vh) rotateX(-180deg);
+        transform: translateY(100vh) rotateY(180deg);
     }
 }
