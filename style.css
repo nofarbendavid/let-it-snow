@@ -96,6 +96,47 @@ body {
     animation-delay: -4s;
 }
 
+.snowflake14 {
+     top: 80px;
+     left: 150px;
+     animation-delay: -2s;
+ }
+
+.snowflake15 {
+    top: 50px;
+    left: 500px;
+    animation-delay: -4s;
+}
+
+.snowflake16 {
+    top: 250px;
+    left: 80px;
+    animation-delay: -3s;
+}
+
+.snowflake17 {
+    top: 280px;
+    left: 350px;
+    animation-delay: -5s;
+}
+
+.snowflake18 {
+    top: 280px;
+    left: 1100px;
+}
+
+.snowflake19 {
+    top: 150px;
+    left: 1200px;
+    animation-delay: -1s;
+}
+
+.snowflake20 {
+    top: 350px;
+    left: 1250px;
+    animation-delay: -1s;
+}
+
 [class*="part"]{
     position: absolute;
 }
@@ -202,3 +243,6 @@ body {
         transform: rotate(-5deg);
     }
 }
+
+
+
